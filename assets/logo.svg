@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 56" width="280" height="56" fill="none">
+  <defs>
+    <!-- Gold Gradient (Luminous Accent) -->
+    <linearGradient id="msGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE566" />
+      <stop offset="45%" stop-color="#F4CE19" />
+      <stop offset="100%" stop-color="#C99400" />
+    </linearGradient>
+
+    <!-- Chrome / Steel Gradient (Metalwork) -->
+    <linearGradient id="msSteel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#E2E6EA" />
+      <stop offset="100%" stop-color="#A8ADB5" />
+    </linearGradient>
+
+    <!-- Glass Refraction (Glasswork) -->
+    <linearGradient id="msGlass" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F4CE19" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#FFE885" stop-opacity="0.95" />
+    </linearGradient>
+
+    <!-- Subtle Glow Shadow -->
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#F4CE19" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- ========================================================
+       EMBLEM: Architectural "M" (Structural Steel + Glass Prism)
+       ======================================================== -->
+  <g transform="translate(6, 4)">
+    <!-- Base geometric plate with rounded bevels -->
+    <rect x="0" y="0" width="48" height="48" rx="12" fill="#14171A" stroke="url(#msGold)" stroke-width="1.5" />
+
+    <!-- Left Structural Column (Serralheria / Perfil de Alumínio) -->
+    <path d="M12 37V15.5L19.5 25.5V37H12Z" fill="url(#msSteel)" />
+
+    <!-- Right Structural Column -->
+    <path d="M36 37V15.5L28.5 25.5V37H36Z" fill="url(#msSteel)" />
+
+    <!-- Center Faceted Prism (Vidraçaria / Vidro Temperado Lapidado) -->
+    <path d="M24 12L19.5 25.5L24 31.5L28.5 25.5L24 12Z" fill="url(#msGlass)" filter="url(#goldGlow)" />
+
+    <!-- Central Facet Reflection Line -->
+    <path d="M24 12V31.5" stroke="#FFFFFF" stroke-width="1" stroke-linecap="round" stroke-opacity="0.9" />
+
+    <!-- Precision Base Frame (Estrutura de Apoio) -->
+    <rect x="12" y="35" width="24" height="2" rx="1" fill="url(#msGold)" />
+
+    <!-- Top Accent Sparkle (Qualidade & Brilho) -->
+    <circle cx="24" cy="8.5" r="1.5" fill="#FFE566" />
+  </g>
+
+  <!-- ========================================================
+       TYPOGRAPHY LOCKUP
+       ======================================================== -->
+  <!-- Primary Wordmark: M. SANTOS -->
+  <text x="68" y="27" font-family="'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="21" font-weight="800" fill="#FFFFFF" letter-spacing="1.2">
+    M<tspan fill="url(#msGold)">.</tspan> SANTOS
+  </text>
+
+  <!-- Tagline: VIDRAÇARIA • SERRALHERIA -->
+  <text x="69" y="41" font-family="'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="700" fill="url(#msGold)" letter-spacing="2.6">
+    VIDRAÇARIA <tspan fill="#A0A5AA">•</tspan> SERRALHERIA
+  </text>
+</svg>
